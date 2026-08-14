@@ -260,12 +260,8 @@ main#content.shake{animation:screenShake .7s cubic-bezier(.36,.07,.19,.97) both;
   html{scroll-behavior:auto;}
 }
 </style>
-<!-- 字体:使用国内可达的 Google Fonts 镜像(fonts.loli.net),并以非阻塞方式加载,
-     避免因 Google Fonts 无法访问导致页面长时间空白或字体缺失;加载失败时自动回退系统字体。 -->
-<link rel="preconnect" href="https://fonts.loli.net">
-<link rel="preconnect" href="https://gstatic.loli.net" crossorigin>
-<link rel="preload" as="style" id="fontSheet" href="https://fonts.loli.net/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Montserrat:wght@300;400;600;700&family=Noto+Serif+SC:wght@400;600&display=block">
-<noscript><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Montserrat:wght@300;400;600;700&family=Noto+Serif+SC:wght@400;600&display=block"></noscript>
+<!-- 字体:本地自托管(fonts/ 目录),完全离线可用,不依赖任何第三方 CDN -->
+<link rel="stylesheet" id="fontSheet" href="fonts/fonts.css">
 </head>
 <body>
 
